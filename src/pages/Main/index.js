@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 
-import { Form } from '@unform/web';
-import Input from '../../components/Input';
-
 import Select from 'react-select'
 
 import './styles.css';
+
 function Main() {
   const options = [
     { value: 'second', label: 'Per Second' },
@@ -31,7 +29,7 @@ function Main() {
     setSalaryTypeQuestion(e.value);
   }
 
-  function handleSalary(e){
+  function handleSalary(e) {
     console.log(salary)
     console.log("value: " + e.target.value)
     setSalary(parseFloat(e.target.value));
@@ -110,28 +108,36 @@ function Main() {
 
   return (
     <div className="container">
-      <h1>How much do I earn?</h1>
-      <Select
-        placeholder="Salary Type"
-        value={options.find(obj => obj.value === salaryTypeQuestion)} // set selected value
-        options={options} // set list of the data
-        onChange={handleSalaryQuestion}
-      />
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="salary">
-          Salary
-        </label>
-        <label htmlFor="">My salary is </label>
-        <input  type="text" name="Salary" id="salary" placeholder="Your Salary" onChange={handleSalary}/>
+      <div className="title">
+        <h1>How much do I earn?</h1>
+      </div>
+      <div className="form-questions">
         <Select
           placeholder="Salary Type"
-          value={options.find(obj => obj.value === salaryTypeAnswer)} // set selected value
+          value={options.find(obj => obj.value === salaryTypeQuestion)} // set selected value
           options={options} // set list of the data
-          onChange={handleSalaryAnswer}
+          onChange={handleSalaryQuestion}
         />
+        <form onSubmit={handleSubmit}>
+          <label htmlFor="salary">
+            My Salary is
+          </label>
+          <input type="text" name="Salary" id="salary" placeholder="Your Salary" onChange={handleSalary} />
+          <Select
+            placeholder="Salary Type"
+            value={options.find(obj => obj.value === salaryTypeAnswer)} // set selected value
+            options={options} // set list of the data
+            onChange={handleSalaryAnswer}
+            className="select"
+          />
+
+          <button type="submit">Calculate!</button>
+        </form>
+      </div>
+      <div className="result">
         <h1>Result = {result}</h1>
-        <button type="submit">Calculate!</button>
-      </form>
+      </div>
+
     </div>
   );
 }
