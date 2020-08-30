@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/KozielGPC/how-much-do-i-earn/static/css/main.dd586c3e.chunk.css",
-    "main.js": "/KozielGPC/how-much-do-i-earn/static/js/main.c72b22c1.chunk.js",
-    "main.js.map": "/KozielGPC/how-much-do-i-earn/static/js/main.c72b22c1.chunk.js.map",
-    "runtime-main.js": "/KozielGPC/how-much-do-i-earn/static/js/runtime-main.666c72f0.js",
-    "runtime-main.js.map": "/KozielGPC/how-much-do-i-earn/static/js/runtime-main.666c72f0.js.map",
-    "static/js/2.2785729f.chunk.js": "/KozielGPC/how-much-do-i-earn/static/js/2.2785729f.chunk.js",
-    "static/js/2.2785729f.chunk.js.map": "/KozielGPC/how-much-do-i-earn/static/js/2.2785729f.chunk.js.map",
-    "index.html": "/KozielGPC/how-much-do-i-earn/index.html",
-    "precache-manifest.0fafac2f322c0ccfae9646ab3a516dc0.js": "/KozielGPC/how-much-do-i-earn/precache-manifest.0fafac2f322c0ccfae9646ab3a516dc0.js",
-    "service-worker.js": "/KozielGPC/how-much-do-i-earn/service-worker.js",
-    "static/css/main.dd586c3e.chunk.css.map": "/KozielGPC/how-much-do-i-earn/static/css/main.dd586c3e.chunk.css.map",
-    "static/js/2.2785729f.chunk.js.LICENSE.txt": "/KozielGPC/how-much-do-i-earn/static/js/2.2785729f.chunk.js.LICENSE.txt"
+    "main.css": "/how-much-do-i-earn/static/css/main.dd586c3e.chunk.css",
+    "main.js": "/how-much-do-i-earn/static/js/main.c72b22c1.chunk.js",
+    "main.js.map": "/how-much-do-i-earn/static/js/main.c72b22c1.chunk.js.map",
+    "runtime-main.js": "/how-much-do-i-earn/static/js/runtime-main.b727ec0e.js",
+    "runtime-main.js.map": "/how-much-do-i-earn/static/js/runtime-main.b727ec0e.js.map",
+    "static/js/2.2785729f.chunk.js": "/how-much-do-i-earn/static/js/2.2785729f.chunk.js",
+    "static/js/2.2785729f.chunk.js.map": "/how-much-do-i-earn/static/js/2.2785729f.chunk.js.map",
+    "index.html": "/how-much-do-i-earn/index.html",
+    "precache-manifest.78f0dda0aac614d3d342d9d0e35be557.js": "/how-much-do-i-earn/precache-manifest.78f0dda0aac614d3d342d9d0e35be557.js",
+    "service-worker.js": "/how-much-do-i-earn/service-worker.js",
+    "static/css/main.dd586c3e.chunk.css.map": "/how-much-do-i-earn/static/css/main.dd586c3e.chunk.css.map",
+    "static/js/2.2785729f.chunk.js.LICENSE.txt": "/how-much-do-i-earn/static/js/2.2785729f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.666c72f0.js",
+    "static/js/runtime-main.b727ec0e.js",
     "static/js/2.2785729f.chunk.js",
     "static/css/main.dd586c3e.chunk.css",
     "static/js/main.c72b22c1.chunk.js"
