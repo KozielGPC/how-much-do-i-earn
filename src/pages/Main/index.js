@@ -15,6 +15,16 @@ function Main() {
     { value: 'year', label: 'Per Year' },
   ]
 
+  const optionsQuestion = [
+    { value: 'second', label: 'Per Second?' },
+    { value: 'minute', label: 'Per Minute?' },
+    { value: 'hour', label: 'Per Hour?' },
+    { value: 'day', label: 'Per Day?' },
+    { value: 'week', label: 'Per Week?' },
+    { value: 'month', label: 'Per Month?' },
+    { value: 'year', label: 'Per Year?' },
+  ]
+
   const [salaryTypeAnswer, setSalaryTypeAnswer] = useState("");
   const [salaryTypeQuestion, setSalaryTypeQuestion] = useState("");
   const [salary, setSalary] = useState(0.0);
@@ -108,21 +118,25 @@ function Main() {
 
   return (
     <div className="container">
+
       <div className="title">
-        <h1>How much do I earn?</h1>
+        <h1>How much do I earn</h1>
       </div>
+
       <div className="form-questions">
+        
+        <form onSubmit={handleSubmit}>
         <Select
           placeholder="Salary Type"
-          value={options.find(obj => obj.value === salaryTypeQuestion)} // set selected value
-          options={options} // set list of the data
+          value={optionsQuestion.find(obj => obj.value === salaryTypeQuestion)} // set selected value
+          options={optionsQuestion} // set list of the data
           onChange={handleSalaryQuestion}
+          className="select"
         />
-        <form onSubmit={handleSubmit}>
           <label htmlFor="salary">
             My Salary is
           </label>
-          <input type="text" name="Salary" id="salary" placeholder="Your Salary" onChange={handleSalary} />
+          <input  type="text" name="Salary" id="salary" placeholder="Example: 156000" onChange={handleSalary} />
           <Select
             placeholder="Salary Type"
             value={options.find(obj => obj.value === salaryTypeAnswer)} // set selected value
@@ -134,6 +148,7 @@ function Main() {
           <button type="submit">Calculate!</button>
         </form>
       </div>
+
       <div className="result">
         <h1>Result = {result}</h1>
       </div>
