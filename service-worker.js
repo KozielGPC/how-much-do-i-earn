@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/how-much-do-i-earn/precache-manifest.78f0dda0aac614d3d342d9d0e35be557.js"
+  "/how-much-do-i-earn/precache-manifest.ca1d873c9f57ddb52d26b270733d343d.js"
 );
 
 self.addEventListener('message', (event) => {
